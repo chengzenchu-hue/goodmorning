@@ -14,9 +14,9 @@ import cloudinary.uploader
 #     api_secret="9QqqS86WnE082iskQ9bT3_EaM0s"
 # )
 cloudinary.config(
-    cloud_name="ds9oxp8g6",
-    api_key="258158317989165",
-    api_secret="rsuHbebzDd5_7bMW9pcTOfW_hnk")
+    cloud_name=os.environ.get("CLOUDINARY_CLOUD_NAME"),
+    api_key=os.environ.get("CLOUDINARY_API_KEY"),
+    api_secret=os.environ.get("CLOUDINARY_API_SECRET")
 # ##cloudinary 雲端 設定--end
 #
 #
